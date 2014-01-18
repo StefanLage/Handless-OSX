@@ -205,4 +205,8 @@
     }
 }
 
+-(void)leapController:(HLLeapController*)leap updatePosition:(CGPoint)newPoint{
+    NSLog(@"new x: %f y: %f", newPoint.x, newPoint.y);
+}
+
 @end

@@ -41,5 +41,6 @@ typedef enum LeapSwipe {
 
 -(void)leapController:(HLLeapController*)leap didFail:(NSError*)error;
 -(void)leapController:(HLLeapController*)leap didSwipe:(LeapSwipe)swipe;
+-(void)leapController:(HLLeapController*)leap updatePosition:(CGPoint)newPoint;
 
 @end

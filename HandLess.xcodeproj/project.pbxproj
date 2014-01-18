@@ -62,8 +62,6 @@
 		F8AB3754188AD81F00DF1006 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F8AB3758188AD9B200DF1006 /* HLLeapController.h */,
-				F8AB3759188AD9B200DF1006 /* HLLeapController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -71,6 +69,7 @@
 		F8AB3755188AD82300DF1006 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8AB375B188B485900DF1006 /* LeapController */,
 				F8AB3757188AD85300DF1006 /* HandLess */,
 			);
 			name = Controllers;
@@ -91,6 +90,15 @@
 				F8C48C93188AC55E00117F03 /* HLAppDelegate.m */,
 			);
 			name = HandLess;
+			sourceTree = "<group>";
+		};
+		F8AB375B188B485900DF1006 /* LeapController */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB3758188AD9B200DF1006 /* HLLeapController.h */,
+				F8AB3759188AD9B200DF1006 /* HLLeapController.m */,
+			);
+			name = LeapController;
 			sourceTree = "<group>";
 		};
 		F8C48C74188AC55E00117F03 = {
