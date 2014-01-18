@@ -62,13 +62,12 @@
             switch (gesture.type) {
                 case LEAP_GESTURE_TYPE_SWIPE: {
                     LeapSwipeGesture *swipeGesture = (LeapSwipeGesture *)gesture;
-                    NSLog(@"Swipe id: %d, %@, position: %@, direction: %@, speed: %f",
-                        swipeGesture.id, [HLLeapController stringForState:swipeGesture.state],
-                        swipeGesture.position, swipeGesture.direction, swipeGesture.speed);
+                    if(swipeGesture.state == LEAP_GESTURE_STATE_STOP)
+                        [self identifyKindOfSwipe:swipeGesture.startPosition last:swipeGesture.position];
                     break;
                 }
                 default:
-                    NSLog(@"Unknown gesture type");
+                    NSLog(@"Unknown gesture");
                     break;
             }
         }
@@ -85,21 +84,35 @@
     NSLog(@"Focus Lost");
 }
 
-+ (NSString *)stringForState:(LeapGestureState)state
-{
-    switch (state) {
-        case LEAP_GESTURE_STATE_INVALID:
-            return @"STATE_INVALID";
-        case LEAP_GESTURE_STATE_START:
-            return @"STATE_START";
-        case LEAP_GESTURE_STATE_UPDATE:
-            return @"STATE_UPDATED";
-        case LEAP_GESTURE_STATE_STOP:
-            return @"STATE_STOP";
-        default:
-            return @"STATE_INVALID";
+/* 
+ * Identify in which direction go the swipe
+ *
+ *      startPosition->X > lastPosition->X ? LEFT : RIGHT
+ *      startPosition->Y > lastPosition->Y ? DOWN : UP
+ *
+ */
+-(void)identifyKindOfSwipe:(LeapVector*)startPosition last:(LeapVector*)lastPosition{
+    LeapSwipe swipe;
+    // Calculate what kind swipe it is
+    // Compare start position to last one
+    float xDiff = startPosition.x - lastPosition.x;
+    float yDiff = startPosition.y - lastPosition.y;
+    // Be sure to have positives numbers
+    if(xDiff < 0)
+        xDiff *= -1;
+    if(yDiff < 0)
+        yDiff *= -1;
+    // What kind of swipe ?
+    if(xDiff > yDiff)
+        // -> LEFT OR RIGHT SWIPE
+        swipe = (startPosition.x > lastPosition.x) ? LEAP_SWIPE_LEFT : LEAP_SWIPE_RIGHT;
+    else
+        // -> UP OR DOWN SWIPE
+        swipe = (startPosition.y > lastPosition.y) ? LEAP_SWIPE_DOWN : LEAP_SWIPE_UP;
+    // Inform delegate about this gesture
+    if([self.delegate respondsToSelector:@selector(leapController:didSwipe:)]){
+        [self.delegate leapController:self didSwipe:swipe];
     }
 }
-
 
 @end

@@ -191,16 +191,16 @@
 -(void)leapController:(HLLeapController*)leap didSwipe:(LeapSwipe)swipe{
     switch (swipe) {
         case LEAP_SWIPE_LEFT:
-            NSLog(@"LEFT DIRECTION");
+            NSLog(@"LEFT");
             break;
-        case LEAP_SWIPE_TOP:
-            NSLog(@"TOP DIRECTION");
+        case LEAP_SWIPE_UP:
+            NSLog(@"UP");
             break;
         case LEAP_SWIPE_RIGHT:
-            NSLog(@"RIGHT DIRECTION");
+            NSLog(@"RIGHT");
             break;
-        case LEAP_SWIPE_BOTTOM:
-            NSLog(@"BOTTOM DIRECTION");
+        case LEAP_SWIPE_DOWN:
+            NSLog(@"DOWN");
             break;
     }
 }

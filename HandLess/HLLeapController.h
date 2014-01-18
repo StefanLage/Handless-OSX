@@ -15,9 +15,9 @@
 // Type of Swipe -> Direction to be more specific
 typedef enum LeapSwipe {
     LEAP_SWIPE_LEFT     = 0,
-    LEAP_SWIPE_TOP      = 1,
+    LEAP_SWIPE_UP       = 1,
     LEAP_SWIPE_RIGHT    = 2,
-    LEAP_SWIPE_BOTTOM   = 3
+    LEAP_SWIPE_DOWN     = 3
 } LeapSwipe;
 
 /*
