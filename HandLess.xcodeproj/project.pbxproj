@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8AB374D188AD78E00DF1006 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
+		F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */; };
+		F8AB3753188AD7A200DF1006 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
+		F8C48C81188AC55E00117F03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C48C80188AC55E00117F03 /* Cocoa.framework */; };
+		F8C48C8B188AC55E00117F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C89188AC55E00117F03 /* InfoPlist.strings */; };
+		F8C48C8D188AC55E00117F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C8C188AC55E00117F03 /* main.m */; };
+		F8C48C91188AC55E00117F03 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C8F188AC55E00117F03 /* Credits.rtf */; };
+		F8C48C94188AC55E00117F03 /* HLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C93188AC55E00117F03 /* HLAppDelegate.m */; };
+		F8C48C97188AC55E00117F03 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C95188AC55E00117F03 /* MainMenu.xib */; };
+		F8C48C9A188AC55E00117F03 /* HandLess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C98188AC55E00117F03 /* HandLess.xcdatamodeld */; };
+		F8C48C9C188AC55E00117F03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C9B188AC55E00117F03 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8AB374C188AD78E00DF1006 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = HandLess/lib/libLeap.dylib; sourceTree = "<group>"; };
+		F8AB374E188AD79900DF1006 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = lib/Leap/Leap.h; sourceTree = "<group>"; };
+		F8AB374F188AD79900DF1006 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = lib/Leap/LeapMath.h; sourceTree = "<group>"; };
+		F8AB3750188AD79900DF1006 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = lib/Leap/LeapObjectiveC.h; sourceTree = "<group>"; };
+		F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = lib/Leap/LeapObjectiveC.mm; sourceTree = "<group>"; };
+		F8C48C7D188AC55E00117F03 /* HandLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C48C80188AC55E00117F03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8C48C83188AC55E00117F03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F8C48C84188AC55E00117F03 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F8C48C85188AC55E00117F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8C48C88188AC55E00117F03 /* HandLess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HandLess-Info.plist"; sourceTree = "<group>"; };
+		F8C48C8A188AC55E00117F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8C48C8C188AC55E00117F03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8C48C8E188AC55E00117F03 /* HandLess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HandLess-Prefix.pch"; sourceTree = "<group>"; };
+		F8C48C90188AC55E00117F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F8C48C92188AC55E00117F03 /* HLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAppDelegate.h; sourceTree = "<group>"; };
+		F8C48C93188AC55E00117F03 /* HLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAppDelegate.m; sourceTree = "<group>"; };
+		F8C48C96188AC55E00117F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F8C48C99188AC55E00117F03 /* HandLess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HandLess.xcdatamodel; sourceTree = "<group>"; };
+		F8C48C9B188AC55E00117F03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8C48C7A188AC55E00117F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AB374D188AD78E00DF1006 /* libLeap.dylib in Frameworks */,
+				F8C48C81188AC55E00117F03 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8AB3754188AD81F00DF1006 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F8AB3755188AD82300DF1006 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB3757188AD85300DF1006 /* HandLess */,
+				F8C48C93188AC55E00117F03 /* HLAppDelegate.m */,
+				F8C48C92188AC55E00117F03 /* HLAppDelegate.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F8AB3756188AD84200DF1006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48C98188AC55E00117F03 /* HandLess.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F8AB3757188AD85300DF1006 /* HandLess */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HandLess;
+			sourceTree = "<group>";
+		};
+		F8C48C74188AC55E00117F03 = {
+			isa = PBXGroup;
+			children = (
+				F8C48C86188AC55E00117F03 /* HandLess */,
+				F8C48C7F188AC55E00117F03 /* Frameworks */,
+				F8C48C7E188AC55E00117F03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8C48C7E188AC55E00117F03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48C7D188AC55E00117F03 /* HandLess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C48C7F188AC55E00117F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB374C188AD78E00DF1006 /* libLeap.dylib */,
+				F8C48C80188AC55E00117F03 /* Cocoa.framework */,
+				F8C48C82188AC55E00117F03 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8C48C82188AC55E00117F03 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48C83188AC55E00117F03 /* AppKit.framework */,
+				F8C48C84188AC55E00117F03 /* CoreData.framework */,
+				F8C48C85188AC55E00117F03 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F8C48C86188AC55E00117F03 /* HandLess */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB3754188AD81F00DF1006 /* Classes */,
+				F8AB3755188AD82300DF1006 /* Controllers */,
+				F8C48CB9188AC57E00117F03 /* Libs */,
+				F8AB3756188AD84200DF1006 /* Models */,
+				F8C48C87188AC55E00117F03 /* Supporting Files */,
+				F8C48CC2188AC6C900117F03 /* Views */,
+			);
+			path = HandLess;
+			sourceTree = "<group>";
+		};
+		F8C48C87188AC55E00117F03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48C9B188AC55E00117F03 /* Images.xcassets */,
+				F8C48C88188AC55E00117F03 /* HandLess-Info.plist */,
+				F8C48C89188AC55E00117F03 /* InfoPlist.strings */,
+				F8C48C8C188AC55E00117F03 /* main.m */,
+				F8C48C8E188AC55E00117F03 /* HandLess-Prefix.pch */,
+				F8C48C8F188AC55E00117F03 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8C48CB9188AC57E00117F03 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48CBA188AC58800117F03 /* Leap */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		F8C48CBA188AC58800117F03 /* Leap */ = {
+			isa = PBXGroup;
+			children = (
+				F8AB374E188AD79900DF1006 /* Leap.h */,
+				F8AB374F188AD79900DF1006 /* LeapMath.h */,
+				F8AB3750188AD79900DF1006 /* LeapObjectiveC.h */,
+				F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */,
+			);
+			name = Leap;
+			sourceTree = "<group>";
+		};
+		F8C48CC2188AC6C900117F03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C48C95188AC55E00117F03 /* MainMenu.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8C48C7C188AC55E00117F03 /* HandLess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C48CB1188AC55E00117F03 /* Build configuration list for PBXNativeTarget "HandLess" */;
+			buildPhases = (
+				F8C48C79188AC55E00117F03 /* Sources */,
+				F8C48C7A188AC55E00117F03 /* Frameworks */,
+				F8C48C7B188AC55E00117F03 /* Resources */,
+				F8C48CC1188AC5CD00117F03 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandLess;
+			productName = HandLess;
+			productReference = F8C48C7D188AC55E00117F03 /* HandLess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8C48C75188AC55E00117F03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Stefan Lage";
+			};
+			buildConfigurationList = F8C48C78188AC55E00117F03 /* Build configuration list for PBXProject "HandLess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8C48C74188AC55E00117F03;
+			productRefGroup = F8C48C7E188AC55E00117F03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8C48C7C188AC55E00117F03 /* HandLess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8C48C7B188AC55E00117F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C48C8B188AC55E00117F03 /* InfoPlist.strings in Resources */,
+				F8C48C9C188AC55E00117F03 /* Images.xcassets in Resources */,
+				F8C48C91188AC55E00117F03 /* Credits.rtf in Resources */,
+				F8AB3753188AD7A200DF1006 /* libLeap.dylib in Resources */,
+				F8C48C97188AC55E00117F03 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8C48CC1188AC5CD00117F03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\necho TARGET_NAME=${TARGET_NAME}\ncd \"${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS\"\nls -la\n# then remap the loader path\ninstall_name_tool -change @loader_path/libLeap.dylib @executable_path/../Resources/libLeap.dylib \"${TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C48C79188AC55E00117F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C48C94188AC55E00117F03 /* HLAppDelegate.m in Sources */,
+				F8C48C8D188AC55E00117F03 /* main.m in Sources */,
+				F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */,
+				F8C48C9A188AC55E00117F03 /* HandLess.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8C48C89188AC55E00117F03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C48C8A188AC55E00117F03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8C48C8F188AC55E00117F03 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C48C90188AC55E00117F03 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F8C48C95188AC55E00117F03 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C48C96188AC55E00117F03 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8C48CAF188AC55E00117F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F8C48CB0188AC55E00117F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F8C48CB2188AC55E00117F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HandLess/HandLess-Prefix.pch";
+				INFOPLIST_FILE = "HandLess/HandLess-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stefan/dev/HandLess,
+					/Users/stefan/dev/PFE/HandLess/HandLess/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8C48CB3188AC55E00117F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HandLess/HandLess-Prefix.pch";
+				INFOPLIST_FILE = "HandLess/HandLess-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stefan/dev/HandLess,
+					/Users/stefan/dev/PFE/HandLess/HandLess/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8C48C78188AC55E00117F03 /* Build configuration list for PBXProject "HandLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C48CAF188AC55E00117F03 /* Debug */,
+				F8C48CB0188AC55E00117F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C48CB1188AC55E00117F03 /* Build configuration list for PBXNativeTarget "HandLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C48CB2188AC55E00117F03 /* Debug */,
+				F8C48CB3188AC55E00117F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8C48C98188AC55E00117F03 /* HandLess.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8C48C99188AC55E00117F03 /* HandLess.xcdatamodel */,
+			);
+			currentVersion = F8C48C99188AC55E00117F03 /* HandLess.xcdatamodel */;
+			path = HandLess.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8C48C75188AC55E00117F03 /* Project object */;
+}
