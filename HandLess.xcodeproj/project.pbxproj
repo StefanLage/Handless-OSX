@@ -10,6 +10,7 @@
 		F8AB374D188AD78E00DF1006 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
 		F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */; };
 		F8AB3753188AD7A200DF1006 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
+		F8AB375A188AD9B200DF1006 /* HLLeapController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB3759188AD9B200DF1006 /* HLLeapController.m */; };
 		F8C48C81188AC55E00117F03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C48C80188AC55E00117F03 /* Cocoa.framework */; };
 		F8C48C8B188AC55E00117F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C89188AC55E00117F03 /* InfoPlist.strings */; };
 		F8C48C8D188AC55E00117F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C8C188AC55E00117F03 /* main.m */; };
@@ -26,6 +27,8 @@
 		F8AB374F188AD79900DF1006 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = lib/Leap/LeapMath.h; sourceTree = "<group>"; };
 		F8AB3750188AD79900DF1006 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = lib/Leap/LeapObjectiveC.h; sourceTree = "<group>"; };
 		F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = lib/Leap/LeapObjectiveC.mm; sourceTree = "<group>"; };
+		F8AB3758188AD9B200DF1006 /* HLLeapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLeapController.h; sourceTree = "<group>"; };
+		F8AB3759188AD9B200DF1006 /* HLLeapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLeapController.m; sourceTree = "<group>"; };
 		F8C48C7D188AC55E00117F03 /* HandLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C48C80188AC55E00117F03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8C48C83188AC55E00117F03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -59,6 +62,8 @@
 		F8AB3754188AD81F00DF1006 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8AB3758188AD9B200DF1006 /* HLLeapController.h */,
+				F8AB3759188AD9B200DF1006 /* HLLeapController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -67,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				F8AB3757188AD85300DF1006 /* HandLess */,
-				F8C48C93188AC55E00117F03 /* HLAppDelegate.m */,
-				F8C48C92188AC55E00117F03 /* HLAppDelegate.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -84,6 +87,8 @@
 		F8AB3757188AD85300DF1006 /* HandLess */ = {
 			isa = PBXGroup;
 			children = (
+				F8C48C92188AC55E00117F03 /* HLAppDelegate.h */,
+				F8C48C93188AC55E00117F03 /* HLAppDelegate.m */,
 			);
 			name = HandLess;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				F8C48C94188AC55E00117F03 /* HLAppDelegate.m in Sources */,
 				F8C48C8D188AC55E00117F03 /* main.m in Sources */,
 				F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */,
+				F8AB375A188AD9B200DF1006 /* HLLeapController.m in Sources */,
 				F8C48C9A188AC55E00117F03 /* HandLess.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

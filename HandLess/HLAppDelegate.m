@@ -7,7 +7,6 @@
 //
 
 #import "HLAppDelegate.h"
-#import "HLLeapController.h"
 
 @implementation HLAppDelegate{
     HLLeapController *leap;
@@ -20,7 +19,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    leap = [[HLLeapController alloc] init];
+    leap = [[HLLeapController alloc] initWithDelegate:self];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "StefanLage.HandLess" in the user's Application Support directory.
@@ -182,6 +181,28 @@
     }
 
     return NSTerminateNow;
+}
+
+#pragma HLLeapController delegate
+-(void)leapController:(HLLeapController*)leap didFail:(NSError*)error{
+    NSLog(@"error %@", [error description]);
+}
+
+-(void)leapController:(HLLeapController*)leap didSwipe:(LeapSwipe)swipe{
+    switch (swipe) {
+        case LEAP_SWIPE_LEFT:
+            NSLog(@"LEFT DIRECTION");
+            break;
+        case LEAP_SWIPE_TOP:
+            NSLog(@"TOP DIRECTION");
+            break;
+        case LEAP_SWIPE_RIGHT:
+            NSLog(@"RIGHT DIRECTION");
+            break;
+        case LEAP_SWIPE_BOTTOM:
+            NSLog(@"BOTTOM DIRECTION");
+            break;
+    }
 }
 
 @end

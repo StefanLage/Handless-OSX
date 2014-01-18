@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HLLeapController.h"
 
-@interface HLAppDelegate : NSObject <NSApplicationDelegate>
+@interface HLAppDelegate : NSObject <NSApplicationDelegate, HLLeapControllerDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 
