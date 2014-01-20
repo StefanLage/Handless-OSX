@@ -62,6 +62,10 @@
 		F8AB3754188AD81F00DF1006 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F8E1FA4F188DD9D0007843D8 /* HLNavigationController.h */,
+				F8E1FA50188DD9D0007843D8 /* HLNavigationController.m */,
+				F8E1FA52188DDEDB007843D8 /* HLViewController.h */,
+				F8E1FA53188DDEDB007843D8 /* HLViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
