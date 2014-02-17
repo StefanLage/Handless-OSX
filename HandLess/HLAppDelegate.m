@@ -8,9 +8,7 @@
 
 #import "HLAppDelegate.h"
 
-@implementation HLAppDelegate{
-    HLLeapController *leap;
-}
+@implementation HLAppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
@@ -19,7 +17,35 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    leap = [[HLLeapController alloc] initWithDelegate:self];
+    /*_dashboard = [[HLDashboardController2 alloc] initWithWindowNibName:@"HLDashboard"];
+    [_dashboard showWindow:nil];*/
+    // Initialization code here.
+    _dashboard = [[HLDashboardViewController alloc] initWithNibName:@"HLDashboardViewController" bundle:nil];
+    _navigationController = [[HLNavigationController alloc] initWithRootViewController:self.dashboard];
+    leap = [[HLLeapController alloc] initWithDelegate:self.dashboard];
+    [self.window.contentView addSubview:self.navigationController.rootViewController.view];
+    [self.window.contentView replaceSubview:[[self.window.contentView subviews] objectAtIndex:0] with:self.navigationController.rootViewController.view];
+    [self.navigationController.rootViewController.view setFrameOrigin:[(NSView*)[[self.window.contentView subviews] objectAtIndex:0] frame].origin];
+    
+    /*
+    _winDashboard = [[HLDashboardController2 alloc] initWithWindowNibName:@"HLDashboard"];
+    [self.winDashboard showWindow:self];
+    */
+    _mainWindow = [[HLMainWindow alloc] initWithWindowNibName:@"HLMainWindow"];
+    [self.mainWindow showWindow:self];
+    
+    
+    [HLSocket socket];
+    
+    
+    
+    //_mainDashboard = [[NSWindowController alloc] initWithWindowNibName:@"HandLess"];
+    //_dashboard = [[HLDashboardViewController alloc] initWithNibName:@"HLDashboardViewController" bundle:nil];
+    //_navigationController = [[HLNavigationController alloc] initWithRootViewController:self.dashboard];
+    //leap = [[HLLeapController alloc] initWithDelegate:self.dashboard];
+    //[_mainDashboard.window.contentView addSubview:self.dashboard.view];
+   // [_mainDashboard.window.contentView replaceSubview:[[_mainDashboard.window.contentView subviews] objectAtIndex:0] with:self.navigationController.rootViewController.view];
+    
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "StefanLage.HandLess" in the user's Application Support directory.
@@ -74,7 +100,7 @@
         if (![properties[NSURLIsDirectoryKey] boolValue]) {
             // Customize and localize this error.
             NSString *failureDescription = [NSString stringWithFormat:@"Expected a folder to store application data, found a file (%@).", [applicationFilesDirectory path]];
-            
+
             NSMutableDictionary *dict = [NSMutableDictionary dictionary];
             [dict setValue:failureDescription forKey:NSLocalizedDescriptionKey];
             error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:101 userInfo:dict];
@@ -181,32 +207,6 @@
     }
 
     return NSTerminateNow;
-}
-
-#pragma HLLeapController delegate
--(void)leapController:(HLLeapController*)leap didFail:(NSError*)error{
-    NSLog(@"error %@", [error description]);
-}
-
--(void)leapController:(HLLeapController*)leap didSwipe:(LeapSwipe)swipe{
-    switch (swipe) {
-        case LEAP_SWIPE_LEFT:
-            NSLog(@"LEFT");
-            break;
-        case LEAP_SWIPE_UP:
-            NSLog(@"UP");
-            break;
-        case LEAP_SWIPE_RIGHT:
-            NSLog(@"RIGHT");
-            break;
-        case LEAP_SWIPE_DOWN:
-            NSLog(@"DOWN");
-            break;
-    }
-}
-
--(void)leapController:(HLLeapController*)leap updatePosition:(CGPoint)newPoint{
-    NSLog(@"new x: %f y: %f", newPoint.x, newPoint.y);
 }
 
 @end

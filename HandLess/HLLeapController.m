@@ -10,6 +10,15 @@
 
 @implementation HLLeapController
 
+-(id)init{
+    self = [super init];
+    if(self) {
+        controller = [[LeapController alloc] init];
+        [controller addListener:self];
+    }
+    return self;
+}
+
 -(id)initWithDelegate:(id<HLLeapControllerDelegate>)delegate{
     self = [super init];
     if(self) {
@@ -35,7 +44,7 @@
     LeapController *aController = (LeapController *)[notification object];
     [aController enableGesture:LEAP_GESTURE_TYPE_CIRCLE enable:NO];
     [aController enableGesture:LEAP_GESTURE_TYPE_KEY_TAP enable:NO];
-    [aController enableGesture:LEAP_GESTURE_TYPE_SCREEN_TAP enable:NO];
+    [aController enableGesture:LEAP_GESTURE_TYPE_SCREEN_TAP enable:YES];
     [aController enableGesture:LEAP_GESTURE_TYPE_SWIPE enable:YES];
 }
 
@@ -68,14 +77,28 @@
                             [self identifyKindOfSwipe:swipeGesture.startPosition last:swipeGesture.position];
                         break;
                     }
+                    case LEAP_GESTURE_TYPE_SCREEN_TAP: {
+                        LeapScreenTapGesture *tapGesture = (LeapScreenTapGesture *)gesture;
+                        if(tapGesture.state == LEAP_GESTURE_STATE_STOP){
+                            if([self.delegate respondsToSelector:@selector(leapController:didTapScreen:)]){
+                                [self.delegate leapController:self didTapScreen:tapGesture];
+                            }
+                        }
+                        //[self identifyKindOfSwipe:tapGesture.startPosition last:swipeGesture.position];
+                        break;
+                    }
                     default:
                         NSLog(@"Unknown gesture");
                         break;
                 }
             }
         }
-        if([finger isValid])
-            [self updateFingerPosition:[frame.pointables objectAtIndex:0]];
+        if([finger isValid] && [[frame.pointables objectAtIndex:0] isValid]){
+            [self updateFingerPosition:[frame.pointables objectAtIndex:0] finger:finger];
+            /*if([self.delegate respondsToSelector:@selector(leapController:updatePosition:)])
+                [self.delegate leapController:self position:[finger tipPosition].magnitude velocity:[finger tipVelocity].magnitude];*/
+            NSLog(@"tipPosition: %f,\t tipVelocity: %f", [finger tipPosition].magnitude, [finger tipVelocity].magnitude);
+        }
     }
 }
 
@@ -127,7 +150,28 @@
  * We get its position in terms of the Window's app size and the LeapPointable object
  *
  */
--(void)updateFingerPosition:(LeapPointable*)pointable{
+-(void)updateFingerPosition:(LeapPointable*)pointable finger:(LeapFinger*)finger{
+    // Get estimated position where the finger is pointed
+    NSArray *screens = controller.locatedScreens;
+    LeapScreen *screen = [screens closestScreenHit:pointable];
+    // Get app's size
+    LeapVector *normalizedCoordinates = [screen intersect:pointable normalize:YES clampRatio:2.0];
+    // Calculate the position of the point in terms of Windows's app size
+    float xPixel = (normalizedCoordinates.x * 480);
+    float yPixel = (normalizedCoordinates.y * (-1800));
+    CGPoint point = CGPointMake(xPixel, yPixel);
+    
+    // Inform listener of its new position
+    if([self.delegate respondsToSelector:@selector(leapController:updatePosition:position:velocity:)])
+        //[self.delegate leapController:self updatePosition:point];
+        [self.delegate leapController:self
+                       updatePosition:point
+                             position:[finger tipPosition].magnitude
+                             velocity:[finger tipVelocity].magnitude];
+
+}
+
+/*-(void)updateFingerPosition:(LeapPointable*)pointable{
     // Get estimated position where the finger is pointed
     NSArray *screens = controller.locatedScreens;
     LeapScreen *screen = [screens closestScreenHit:pointable];
@@ -135,13 +179,12 @@
     CGSize size = [(NSWindow*)[[[NSApplication sharedApplication] windows] objectAtIndex:0] frame].size;
     LeapVector *normalizedCoordinates = [screen intersect:pointable normalize:YES clampRatio:2.0];
     // Calculate the position of the point in terms of Windows's app size
-    float xPixel = (normalizedCoordinates.x * size.width);
-    float yPixel = (normalizedCoordinates.y * size.height);
+    float xPixel = (normalizedCoordinates.x * 480);
+    float yPixel = (normalizedCoordinates.y * 900);
     CGPoint point = CGPointMake(xPixel, yPixel);
     // Inform listener of its new position
     if([self.delegate respondsToSelector:@selector(leapController:updatePosition:)])
         [self.delegate leapController:self updatePosition:point];
-
-}
+}*/
 
 @end

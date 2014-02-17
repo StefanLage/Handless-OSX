@@ -6,4 +6,14 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+    #import "Singleton.h"
+    #import "HLOrderSingleton.h"
+    #import "HLSocket.h"
+    #import "HLProduct.h"
+    #import "HLOrder.h"
+
+    #define MENU            @"Menu"
+    #define BEVERAGE        @"Boisson"
+    #define DESSERT         @"Dessert"
+
 #endif

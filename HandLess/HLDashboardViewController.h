@@ -6,9 +6,16 @@
 //  Copyright (c) 2014 Stefan Lage. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "HLViewController.h"
+#import "HLNewOrderViewController.h"
+#import "HLDashboardView.h"
+#import "HLMenuViewController.h"
 
-@interface HLDashboardViewController : HLViewController
+@interface HLDashboardViewController : HLViewController <HLLeapControllerDelegate>{
+    HLDashboardView *dashView;
+    float mid;
+    BOOL needCreate;
+    HLMenuView *menuView;
+}
 
 @end

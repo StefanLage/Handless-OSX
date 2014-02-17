@@ -29,4 +29,17 @@
 - (void)viewDidAppear{}
 - (void)viewDidDisappear{}
 
+#pragma mark - HLLeapController delegate
+-(void)leapController:(HLLeapController*)leap didFail:(NSError*)error{
+}
+
+-(void)leapController:(HLLeapController*)leap didSwipe:(LeapSwipe)swipe{
+}
+
+-(void)leapController:(HLLeapController*)leap updatePosition:(CGPoint)newPoint{
+}
+
+-(void)leapController:(HLLeapController*)leap didTapScreen:(LeapScreenTapGesture*)tap{
+}
+
 @end

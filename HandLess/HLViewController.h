@@ -7,11 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HLLeapController.h"
 
-@class HLNavigationController;
+@class NSNavigationController;
 
-@interface HLViewController : NSViewController
-@property (nonatomic, weak) HLNavigationController *navigationController;
+@interface HLViewController : NSViewController <NSCoding, HLLeapControllerDelegate>
+@property (nonatomic, weak) NSNavigationController *navigationController;
 
 - (void)viewDidLoad;
 - (void)viewWillAppear;

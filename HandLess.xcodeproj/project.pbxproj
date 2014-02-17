@@ -7,21 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80B7A9918ADB84F00673427 /* HLRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B7A9818ADB84F00673427 /* HLRowView.m */; };
+		F82D6DFE188F1C13001783B1 /* HLDashboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82D6DFD188F1C13001783B1 /* HLDashboardView.m */; };
+		F831FDDC188C7D2C00264023 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F831FDDB188C7D2C00264023 /* QuartzCore.framework */; };
+		F8563BFB1891166800E261C1 /* HLOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8563BFA1891166800E261C1 /* HLOrderViewController.m */; };
+		F8563BFE189120F100E261C1 /* HLMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8563BFD189120F100E261C1 /* HLMenuViewController.m */; };
+		F8563C011891281200E261C1 /* HLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8563C001891281200E261C1 /* HLMenuView.m */; };
+		F8563C041891564300E261C1 /* HLView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8563C031891564300E261C1 /* HLView.m */; };
+		F856E6A7188FD7730009F84F /* HLNewOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F856E6A6188FD7730009F84F /* HLNewOrderView.m */; };
+		F856E6AA189077C30009F84F /* HLOrderSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F856E6A9189077C30009F84F /* HLOrderSingleton.m */; };
+		F85BD45D188B5517007025E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85BD45C188B5517007025E1 /* MainMenu.xib */; };
+		F86A926F1891CA6B00C12DF0 /* HLMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86A926E1891CA6B00C12DF0 /* HLMenuViewController.xib */; };
+		F87AB432188E6DEB00272426 /* HLNewOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AB430188E6DEB00272426 /* HLNewOrderViewController.m */; };
+		F87AB433188E6DEB00272426 /* HLNewOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87AB431188E6DEB00272426 /* HLNewOrderViewController.xib */; };
+		F87AB437188E6FA800272426 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AB436188E6FA800272426 /* Singleton.m */; };
+		F87AB43D188E7BFC00272426 /* HLDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AB43B188E7BFC00272426 /* HLDashboardViewController.m */; };
+		F87AB43E188E7BFC00272426 /* HLDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87AB43C188E7BFC00272426 /* HLDashboardViewController.xib */; };
+		F87AB441188EA4FE00272426 /* NSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AB440188EA4FE00272426 /* NSNavigationController.m */; };
+		F87AB447188ECF6A00272426 /* HLMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AB445188ECF6A00272426 /* HLMainWindow.m */; };
+		F87AB448188ECF6A00272426 /* HLMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87AB446188ECF6A00272426 /* HLMainWindow.xib */; };
+		F87AE41418985906003CFA5A /* HLBeverageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AE41218985906003CFA5A /* HLBeverageViewController.m */; };
+		F87AE41518985906003CFA5A /* HLBeverageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87AE41318985906003CFA5A /* HLBeverageViewController.xib */; };
 		F8AB374D188AD78E00DF1006 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
 		F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */; };
 		F8AB3753188AD7A200DF1006 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = F8AB374C188AD78E00DF1006 /* libLeap.dylib */; };
 		F8AB375A188AD9B200DF1006 /* HLLeapController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB3759188AD9B200DF1006 /* HLLeapController.m */; };
+		F8AB376E188B4C0100DF1006 /* HLDashboard_.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8AB376D188B4C0100DF1006 /* HLDashboard_.xib */; };
+		F8AC2CD818AC437700CF0CA4 /* HLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC2CD518AC437700CF0CA4 /* HLProduct.m */; };
+		F8AC2CD918AC437700CF0CA4 /* HLOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC2CD718AC437700CF0CA4 /* HLOrder.m */; };
+		F8B3C22A18986C3F0052355F /* HLDessertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B3C22818986C3F0052355F /* HLDessertViewController.m */; };
+		F8B3C22B18986C3F0052355F /* HLDessertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B3C22918986C3F0052355F /* HLDessertViewController.xib */; };
+		F8C1580418A7C35700C4B355 /* HLSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1580318A7C35700C4B355 /* HLSocket.m */; };
 		F8C48C81188AC55E00117F03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C48C80188AC55E00117F03 /* Cocoa.framework */; };
 		F8C48C8B188AC55E00117F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C89188AC55E00117F03 /* InfoPlist.strings */; };
 		F8C48C8D188AC55E00117F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C8C188AC55E00117F03 /* main.m */; };
 		F8C48C91188AC55E00117F03 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C8F188AC55E00117F03 /* Credits.rtf */; };
 		F8C48C94188AC55E00117F03 /* HLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C93188AC55E00117F03 /* HLAppDelegate.m */; };
-		F8C48C97188AC55E00117F03 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C95188AC55E00117F03 /* MainMenu.xib */; };
 		F8C48C9A188AC55E00117F03 /* HandLess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8C48C98188AC55E00117F03 /* HandLess.xcdatamodeld */; };
 		F8C48C9C188AC55E00117F03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C48C9B188AC55E00117F03 /* Images.xcassets */; };
+		F8E1FA51188DD9D0007843D8 /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E1FA50188DD9D0007843D8 /* HLNavigationController.m */; };
+		F8E1FA54188DDEDB007843D8 /* HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E1FA53188DDEDB007843D8 /* HLViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80B7A9718ADB84F00673427 /* HLRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLRowView.h; sourceTree = "<group>"; };
+		F80B7A9818ADB84F00673427 /* HLRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLRowView.m; sourceTree = "<group>"; };
+		F82D6DFC188F1C13001783B1 /* HLDashboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLDashboardView.h; sourceTree = "<group>"; };
+		F82D6DFD188F1C13001783B1 /* HLDashboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLDashboardView.m; sourceTree = "<group>"; };
+		F831FDDB188C7D2C00264023 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8563BF91891166800E261C1 /* HLOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLOrderViewController.h; sourceTree = "<group>"; };
+		F8563BFA1891166800E261C1 /* HLOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLOrderViewController.m; sourceTree = "<group>"; };
+		F8563BFC189120F100E261C1 /* HLMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMenuViewController.h; sourceTree = "<group>"; };
+		F8563BFD189120F100E261C1 /* HLMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMenuViewController.m; sourceTree = "<group>"; };
+		F8563BFF1891281200E261C1 /* HLMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMenuView.h; sourceTree = "<group>"; };
+		F8563C001891281200E261C1 /* HLMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMenuView.m; sourceTree = "<group>"; };
+		F8563C021891564300E261C1 /* HLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLView.h; sourceTree = "<group>"; };
+		F8563C031891564300E261C1 /* HLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLView.m; sourceTree = "<group>"; };
+		F856E6A5188FD7730009F84F /* HLNewOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLNewOrderView.h; sourceTree = "<group>"; };
+		F856E6A6188FD7730009F84F /* HLNewOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNewOrderView.m; sourceTree = "<group>"; };
+		F856E6A8189077C30009F84F /* HLOrderSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLOrderSingleton.h; sourceTree = "<group>"; };
+		F856E6A9189077C30009F84F /* HLOrderSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLOrderSingleton.m; sourceTree = "<group>"; };
+		F85BD45C188B5517007025E1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F86A926E1891CA6B00C12DF0 /* HLMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLMenuViewController.xib; sourceTree = "<group>"; };
+		F87AB42F188E6DEB00272426 /* HLNewOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLNewOrderViewController.h; sourceTree = "<group>"; };
+		F87AB430188E6DEB00272426 /* HLNewOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNewOrderViewController.m; sourceTree = "<group>"; };
+		F87AB431188E6DEB00272426 /* HLNewOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLNewOrderViewController.xib; sourceTree = "<group>"; };
+		F87AB435188E6FA800272426 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		F87AB436188E6FA800272426 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		F87AB43A188E7BFC00272426 /* HLDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLDashboardViewController.h; sourceTree = "<group>"; };
+		F87AB43B188E7BFC00272426 /* HLDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLDashboardViewController.m; sourceTree = "<group>"; };
+		F87AB43C188E7BFC00272426 /* HLDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLDashboardViewController.xib; sourceTree = "<group>"; };
+		F87AB43F188EA4FE00272426 /* NSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNavigationController.h; sourceTree = "<group>"; };
+		F87AB440188EA4FE00272426 /* NSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNavigationController.m; sourceTree = "<group>"; };
+		F87AB444188ECF6A00272426 /* HLMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLMainWindow.h; sourceTree = "<group>"; };
+		F87AB445188ECF6A00272426 /* HLMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLMainWindow.m; sourceTree = "<group>"; };
+		F87AB446188ECF6A00272426 /* HLMainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLMainWindow.xib; sourceTree = "<group>"; };
+		F87AE41118985906003CFA5A /* HLBeverageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLBeverageViewController.h; sourceTree = "<group>"; };
+		F87AE41218985906003CFA5A /* HLBeverageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLBeverageViewController.m; sourceTree = "<group>"; };
+		F87AE41318985906003CFA5A /* HLBeverageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLBeverageViewController.xib; sourceTree = "<group>"; };
 		F8AB374C188AD78E00DF1006 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = HandLess/lib/libLeap.dylib; sourceTree = "<group>"; };
 		F8AB374E188AD79900DF1006 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = lib/Leap/Leap.h; sourceTree = "<group>"; };
 		F8AB374F188AD79900DF1006 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = lib/Leap/LeapMath.h; sourceTree = "<group>"; };
@@ -29,6 +92,16 @@
 		F8AB3751188AD79900DF1006 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = lib/Leap/LeapObjectiveC.mm; sourceTree = "<group>"; };
 		F8AB3758188AD9B200DF1006 /* HLLeapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLeapController.h; sourceTree = "<group>"; };
 		F8AB3759188AD9B200DF1006 /* HLLeapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLeapController.m; sourceTree = "<group>"; };
+		F8AB376D188B4C0100DF1006 /* HLDashboard_.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLDashboard_.xib; sourceTree = "<group>"; };
+		F8AC2CD418AC437700CF0CA4 /* HLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLProduct.h; sourceTree = "<group>"; };
+		F8AC2CD518AC437700CF0CA4 /* HLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLProduct.m; sourceTree = "<group>"; };
+		F8AC2CD618AC437700CF0CA4 /* HLOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLOrder.h; sourceTree = "<group>"; };
+		F8AC2CD718AC437700CF0CA4 /* HLOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLOrder.m; sourceTree = "<group>"; };
+		F8B3C22718986C3F0052355F /* HLDessertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLDessertViewController.h; sourceTree = "<group>"; };
+		F8B3C22818986C3F0052355F /* HLDessertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLDessertViewController.m; sourceTree = "<group>"; };
+		F8B3C22918986C3F0052355F /* HLDessertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLDessertViewController.xib; sourceTree = "<group>"; };
+		F8C1580218A7C35700C4B355 /* HLSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSocket.h; sourceTree = "<group>"; };
+		F8C1580318A7C35700C4B355 /* HLSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSocket.m; sourceTree = "<group>"; };
 		F8C48C7D188AC55E00117F03 /* HandLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C48C80188AC55E00117F03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8C48C83188AC55E00117F03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,9 +114,12 @@
 		F8C48C90188AC55E00117F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F8C48C92188AC55E00117F03 /* HLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAppDelegate.h; sourceTree = "<group>"; };
 		F8C48C93188AC55E00117F03 /* HLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAppDelegate.m; sourceTree = "<group>"; };
-		F8C48C96188AC55E00117F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F8C48C99188AC55E00117F03 /* HandLess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HandLess.xcdatamodel; sourceTree = "<group>"; };
 		F8C48C9B188AC55E00117F03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8E1FA4F188DD9D0007843D8 /* HLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLNavigationController.h; sourceTree = "<group>"; };
+		F8E1FA50188DD9D0007843D8 /* HLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNavigationController.m; sourceTree = "<group>"; };
+		F8E1FA52188DDEDB007843D8 /* HLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewController.h; sourceTree = "<group>"; };
+		F8E1FA53188DDEDB007843D8 /* HLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F831FDDC188C7D2C00264023 /* QuartzCore.framework in Frameworks */,
 				F8AB374D188AD78E00DF1006 /* libLeap.dylib in Frameworks */,
 				F8C48C81188AC55E00117F03 /* Cocoa.framework in Frameworks */,
 			);
@@ -59,13 +136,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F8AB3754188AD81F00DF1006 /* Classes */ = {
+		F82D6DFA188F1BE9001783B1 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F8B3C22918986C3F0052355F /* HLDessertViewController.xib */,
+				F87AE41318985906003CFA5A /* HLBeverageViewController.xib */,
+				F87AB446188ECF6A00272426 /* HLMainWindow.xib */,
+				F87AB43C188E7BFC00272426 /* HLDashboardViewController.xib */,
+				F87AB431188E6DEB00272426 /* HLNewOrderViewController.xib */,
+				F85BD45C188B5517007025E1 /* MainMenu.xib */,
+				F8AB376D188B4C0100DF1006 /* HLDashboard_.xib */,
+				F86A926E1891CA6B00C12DF0 /* HLMenuViewController.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		F8563BF81891161B00E261C1 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				F8B3C223189869420052355F /* Dessert */,
+				F87AE41018985801003CFA5A /* Beverage */,
+				F87AE40F189857E8003CFA5A /* Menu */,
+				F87AB42F188E6DEB00272426 /* HLNewOrderViewController.h */,
+				F87AB430188E6DEB00272426 /* HLNewOrderViewController.m */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		F856E6A3188FD72F0009F84F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F82D6DFC188F1C13001783B1 /* HLDashboardView.h */,
+				F82D6DFD188F1C13001783B1 /* HLDashboardView.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		F856E6A4188FD74F0009F84F /* New Order */ = {
+			isa = PBXGroup;
+			children = (
+				F856E6A5188FD7730009F84F /* HLNewOrderView.h */,
+				F856E6A6188FD7730009F84F /* HLNewOrderView.m */,
+				F8563BFF1891281200E261C1 /* HLMenuView.h */,
+				F8563C001891281200E261C1 /* HLMenuView.m */,
+				F8563C021891564300E261C1 /* HLView.h */,
+				F8563C031891564300E261C1 /* HLView.m */,
+				F80B7A9718ADB84F00673427 /* HLRowView.h */,
+				F80B7A9818ADB84F00673427 /* HLRowView.m */,
+			);
+			name = "New Order";
+			sourceTree = "<group>";
+		};
+		F87AB434188E6ED900272426 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				F87AB435188E6FA800272426 /* Singleton.h */,
+				F87AB436188E6FA800272426 /* Singleton.m */,
+				F856E6A8189077C30009F84F /* HLOrderSingleton.h */,
+				F856E6A9189077C30009F84F /* HLOrderSingleton.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		F87AB442188EA87200272426 /* HLNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				F8E1FA4F188DD9D0007843D8 /* HLNavigationController.h */,
 				F8E1FA50188DD9D0007843D8 /* HLNavigationController.m */,
+			);
+			name = HLNavigation;
+			sourceTree = "<group>";
+		};
+		F87AB443188EB7D200272426 /* MainWindows */ = {
+			isa = PBXGroup;
+			children = (
+				F87AB444188ECF6A00272426 /* HLMainWindow.h */,
+				F87AB445188ECF6A00272426 /* HLMainWindow.m */,
+			);
+			name = MainWindows;
+			sourceTree = "<group>";
+		};
+		F87AE40F189857E8003CFA5A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F8563BFC189120F100E261C1 /* HLMenuViewController.h */,
+				F8563BFD189120F100E261C1 /* HLMenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F87AE41018985801003CFA5A /* Beverage */ = {
+			isa = PBXGroup;
+			children = (
+				F87AE41118985906003CFA5A /* HLBeverageViewController.h */,
+				F87AE41218985906003CFA5A /* HLBeverageViewController.m */,
+			);
+			name = Beverage;
+			sourceTree = "<group>";
+		};
+		F8AB3754188AD81F00DF1006 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC2CD418AC437700CF0CA4 /* HLProduct.h */,
+				F8AC2CD518AC437700CF0CA4 /* HLProduct.m */,
+				F8AC2CD618AC437700CF0CA4 /* HLOrder.h */,
+				F8AC2CD718AC437700CF0CA4 /* HLOrder.m */,
 				F8E1FA52188DDEDB007843D8 /* HLViewController.h */,
 				F8E1FA53188DDEDB007843D8 /* HLViewController.m */,
+				F87AB43F188EA4FE00272426 /* NSNavigationController.h */,
+				F87AB440188EA4FE00272426 /* NSNavigationController.m */,
+				F8563BF91891166800E261C1 /* HLOrderViewController.h */,
+				F8563BFA1891166800E261C1 /* HLOrderViewController.m */,
+				F8C1580218A7C35700C4B355 /* HLSocket.h */,
+				F8C1580318A7C35700C4B355 /* HLSocket.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -73,8 +256,13 @@
 		F8AB3755188AD82300DF1006 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F8AB375B188B485900DF1006 /* LeapController */,
+				F8563BF81891161B00E261C1 /* Order */,
+				F87AB443188EB7D200272426 /* MainWindows */,
+				F87AB442188EA87200272426 /* HLNavigation */,
+				F87AB434188E6ED900272426 /* Singletons */,
+				F8AB3764188B49BD00DF1006 /* Dashboard */,
 				F8AB3757188AD85300DF1006 /* HandLess */,
+				F8AB375B188B485900DF1006 /* LeapController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -105,11 +293,30 @@
 			name = LeapController;
 			sourceTree = "<group>";
 		};
+		F8AB3764188B49BD00DF1006 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F87AB43A188E7BFC00272426 /* HLDashboardViewController.h */,
+				F87AB43B188E7BFC00272426 /* HLDashboardViewController.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		F8B3C223189869420052355F /* Dessert */ = {
+			isa = PBXGroup;
+			children = (
+				F8B3C22718986C3F0052355F /* HLDessertViewController.h */,
+				F8B3C22818986C3F0052355F /* HLDessertViewController.m */,
+			);
+			name = Dessert;
+			sourceTree = "<group>";
+		};
 		F8C48C74188AC55E00117F03 = {
 			isa = PBXGroup;
 			children = (
-				F8C48C86188AC55E00117F03 /* HandLess */,
 				F8C48C7F188AC55E00117F03 /* Frameworks */,
+				F8C48C86188AC55E00117F03 /* HandLess */,
+				F8C48CB9188AC57E00117F03 /* Libs */,
 				F8C48C7E188AC55E00117F03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +332,7 @@
 		F8C48C7F188AC55E00117F03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F831FDDB188C7D2C00264023 /* QuartzCore.framework */,
 				F8AB374C188AD78E00DF1006 /* libLeap.dylib */,
 				F8C48C80188AC55E00117F03 /* Cocoa.framework */,
 				F8C48C82188AC55E00117F03 /* Other Frameworks */,
@@ -147,7 +355,7 @@
 			children = (
 				F8AB3754188AD81F00DF1006 /* Classes */,
 				F8AB3755188AD82300DF1006 /* Controllers */,
-				F8C48CB9188AC57E00117F03 /* Libs */,
+				F82D6DFA188F1BE9001783B1 /* Interfaces */,
 				F8AB3756188AD84200DF1006 /* Models */,
 				F8C48C87188AC55E00117F03 /* Supporting Files */,
 				F8C48CC2188AC6C900117F03 /* Views */,
@@ -174,6 +382,7 @@
 				F8C48CBA188AC58800117F03 /* Leap */,
 			);
 			name = Libs;
+			path = HandLess;
 			sourceTree = "<group>";
 		};
 		F8C48CBA188AC58800117F03 /* Leap */ = {
@@ -190,7 +399,8 @@
 		F8C48CC2188AC6C900117F03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F8C48C95188AC55E00117F03 /* MainMenu.xib */,
+				F856E6A4188FD74F0009F84F /* New Order */,
+				F856E6A3188FD72F0009F84F /* Dashboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -250,10 +460,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C48C8B188AC55E00117F03 /* InfoPlist.strings in Resources */,
+				F8B3C22B18986C3F0052355F /* HLDessertViewController.xib in Resources */,
+				F86A926F1891CA6B00C12DF0 /* HLMenuViewController.xib in Resources */,
+				F87AB43E188E7BFC00272426 /* HLDashboardViewController.xib in Resources */,
 				F8C48C9C188AC55E00117F03 /* Images.xcassets in Resources */,
+				F8AB376E188B4C0100DF1006 /* HLDashboard_.xib in Resources */,
+				F87AB433188E6DEB00272426 /* HLNewOrderViewController.xib in Resources */,
 				F8C48C91188AC55E00117F03 /* Credits.rtf in Resources */,
 				F8AB3753188AD7A200DF1006 /* libLeap.dylib in Resources */,
-				F8C48C97188AC55E00117F03 /* MainMenu.xib in Resources */,
+				F87AE41518985906003CFA5A /* HLBeverageViewController.xib in Resources */,
+				F85BD45D188B5517007025E1 /* MainMenu.xib in Resources */,
+				F87AB448188ECF6A00272426 /* HLMainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +497,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8563BFB1891166800E261C1 /* HLOrderViewController.m in Sources */,
+				F856E6AA189077C30009F84F /* HLOrderSingleton.m in Sources */,
+				F87AE41418985906003CFA5A /* HLBeverageViewController.m in Sources */,
+				F8563C011891281200E261C1 /* HLMenuView.m in Sources */,
+				F8B3C22A18986C3F0052355F /* HLDessertViewController.m in Sources */,
+				F87AB441188EA4FE00272426 /* NSNavigationController.m in Sources */,
+				F8E1FA54188DDEDB007843D8 /* HLViewController.m in Sources */,
+				F8AC2CD918AC437700CF0CA4 /* HLOrder.m in Sources */,
 				F8C48C94188AC55E00117F03 /* HLAppDelegate.m in Sources */,
 				F8C48C8D188AC55E00117F03 /* main.m in Sources */,
+				F87AB432188E6DEB00272426 /* HLNewOrderViewController.m in Sources */,
 				F8AB3752188AD79900DF1006 /* LeapObjectiveC.mm in Sources */,
 				F8AB375A188AD9B200DF1006 /* HLLeapController.m in Sources */,
+				F8E1FA51188DD9D0007843D8 /* HLNavigationController.m in Sources */,
+				F87AB437188E6FA800272426 /* Singleton.m in Sources */,
+				F82D6DFE188F1C13001783B1 /* HLDashboardView.m in Sources */,
+				F856E6A7188FD7730009F84F /* HLNewOrderView.m in Sources */,
+				F8563C041891564300E261C1 /* HLView.m in Sources */,
+				F8C1580418A7C35700C4B355 /* HLSocket.m in Sources */,
+				F87AB447188ECF6A00272426 /* HLMainWindow.m in Sources */,
+				F87AB43D188E7BFC00272426 /* HLDashboardViewController.m in Sources */,
 				F8C48C9A188AC55E00117F03 /* HandLess.xcdatamodeld in Sources */,
+				F8AC2CD818AC437700CF0CA4 /* HLProduct.m in Sources */,
+				F80B7A9918ADB84F00673427 /* HLRowView.m in Sources */,
+				F8563BFE189120F100E261C1 /* HLMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +542,6 @@
 				F8C48C90188AC55E00117F03 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		F8C48C95188AC55E00117F03 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8C48C96188AC55E00117F03 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -349,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -381,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;

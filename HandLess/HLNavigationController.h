@@ -7,17 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSNavigationController.h"
+#import "HLLeapController.h"
 
-@class HLViewController;
-
-@interface HLNavigationController : NSResponder
-
-@property (nonatomic, strong) HLViewController *rootViewController;
-@property (nonatomic, strong) NSMutableArray *viewControllerStack;
-
-- (id)initWithRootViewController:(HLViewController*)rootViewController;
-- (NSView*)view;
-- (void)pushViewController:(HLViewController*)viewController;
-- (HLViewController*)popViewController;
-
+@interface HLNavigationController : NSNavigationController{
+    HLLeapController *leap;
+}
+-(void)setLeapDelegate:(HLViewController*) viewController;
+- (void)pushViewController:(HLViewController*)viewController delegate:(BOOL)delegate;
 @end
